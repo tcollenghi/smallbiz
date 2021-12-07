@@ -1,0 +1,182 @@
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Small Business Starter Kit</Name>
+    <Description>Starter Kit for Small Business Online Presence</Description>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>smallbusiness_cs</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ProjectName.webproj" File="ProjectName.webproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="About.aspx">About.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="About.aspx.cs">About.aspx.cs</ProjectItem>
+      <Folder Name="App_Code" TargetFolderName="App_Code">
+        <Folder Name="Catalog" TargetFolderName="Catalog">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Catalog.cs">Catalog.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CatalogProvider.cs">CatalogProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Category.cs">Category.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Item.cs">Item.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SqlCatalogProvider.cs">SqlCatalogProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlCatalogProvider.cs">XmlCatalogProvider.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Messages.cs">Messages.cs</ProjectItem>
+        <Folder Name="News" TargetFolderName="News">
+          <ProjectItem ReplaceParameters="true" TargetFileName="News.cs">News.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="NewsItem.cs">NewsItem.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="NewsProvider.cs">NewsProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SqlNewsProvider.cs">SqlNewsProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlNewsProvider.cs">XmlNewsProvider.cs</ProjectItem>
+        </Folder>
+        <Folder Name="People" TargetFolderName="People">
+          <ProjectItem ReplaceParameters="true" TargetFileName="People.cs">People.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PeopleProvider.cs">PeopleProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Person.cs">Person.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SqlPeopleProvider.cs">SqlPeopleProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlPeopleProvider.cs">XmlPeopleProvider.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProviderSettingsValidation.cs">ProviderSettingsValidation.cs</ProjectItem>
+        <Folder Name="Testimonials" TargetFolderName="Testimonials">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SqlTestimonialProvider.cs">SqlTestimonialProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Testimonial.cs">Testimonial.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="TestimonialProvider.cs">TestimonialProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Testimonials.cs">Testimonials.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlTestimonialProvider.cs">XmlTestimonialProvider.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Util.cs">Util.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SmallBusinessDataProvidersSection.cs">SmallBusinessDataProvidersSection.cs</ProjectItem>
+      </Folder>
+      <Folder Name="App_Data" TargetFolderName="App_Data">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Items.xml">Items.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="News.xml">News.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="People.xml">People.xml</ProjectItem>
+        <Folder Name="schemas" TargetFolderName="schemas">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Items.xsd">Items.xsd</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Items.xss">Items.xss</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="News.xsd">News.xsd</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="News.xsx">News.xsx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="People.xsd">People.xsd</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="People.xsx">People.xsx</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Testimonials.xsd">Testimonials.xsd</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Testimonials.xsx">Testimonials.xsx</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SetupDatabase.sql">SetupDatabase.sql</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SmallCompanyDB.mdf">SmallCompanyDB.mdf</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Testimonials.xml">Testimonials.xml</ProjectItem>
+      </Folder>
+      <Folder Name="App_Themes" TargetFolderName="App_Themes">
+        <Folder Name="Standard" TargetFolderName="Standard">
+          <ProjectItem ReplaceParameters="true" TargetFileName="css-content.css">css-content.css</ProjectItem>
+        </Folder>
+	<ProjectItem ReplaceParameters="true" TargetFileName="css-print.css">css-print.css</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Contact.aspx">Contact.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Contact.aspx.cs">Contact.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Default.aspx">Default.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Default.aspx.cs">Default.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Eula.htm">Eula.htm</ProjectItem>
+      <Folder Name="images" TargetFolderName="images">
+        <ProjectItem ReplaceParameters="false" TargetFileName="arrow.gif">arrow.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-active.png">bg-active.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-content-side.png">bg-content-side.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-nav-side.png">bg-nav-side.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-nav.png">bg-nav.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-photo.png">bg-photo.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-quote.png">bg-quote.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-three-column-home.png">bg-three-column-home.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="bg-three-column-main.png">bg-three-column-main.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat01.jpg">cat01.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat02.jpg">cat02.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat03.jpg">cat03.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat04.jpg">cat04.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat05.jpg">cat05.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat06.jpg">cat06.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat07.jpg">cat07.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="cat08.jpg">cat08.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_arrow.gif">corp_blue_arrow.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_logo_glb.jpg">corp_blue_logo_glb.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_logo_home.jpg">corp_blue_logo_home.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_bg_l.gif">corp_blue_nav_bg_l.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_bg_r.gif">corp_blue_nav_bg_r.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_bl.gif">corp_blue_nav_bl.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_br.gif">corp_blue_nav_br.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_tl.gif">corp_blue_nav_tl.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_tl.jpg">corp_blue_nav_tl.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_tr.gif">corp_blue_nav_tr.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="corp_blue_nav_tr.jpg">corp_blue_nav_tr.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="home-photo-1.jpg">home-photo-1.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="home-photo-2.jpg">home-photo-2.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="home-photo-3.jpg">home-photo-3.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="item01.jpg">item01.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="item02.jpg">item02.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="list-bullet-01-link.gif">list-bullet-01-link.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="list-bullet-01.gif">list-bullet-01.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="list-bullet-02-link.gif">list-bullet-02-link.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="list-bullet-02.gif">list-bullet-02.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="news-2.jpg">news-2.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="news.jpg">news.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="news1.jpg">news1.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="news2.jpg">news2.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-1.jpg">person-1.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-2.jpg">person-2.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-3.jpg">person-3.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-4.jpg">person-4.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-5.jpg">person-5.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-6.jpg">person-6.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="person-7.jpg">person-7.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="photo-poster.jpg">photo-poster.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-1.jpg">product-small-1.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-10.jpg">product-small-10.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-11.jpg">product-small-11.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-12.jpg">product-small-12.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-13.jpg">product-small-13.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-2.jpg">product-small-2.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-3.jpg">product-small-3.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-4.jpg">product-small-4.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-5.jpg">product-small-5.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-6.jpg">product-small-6.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-7.jpg">product-small-7.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-8.jpg">product-small-8.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="product-small-9.jpg">product-small-9.jpg</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="spacer.gif">spacer.gif</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ItemDetail.aspx">ItemDetail.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ItemDetail.aspx.cs">ItemDetail.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Items.aspx">Items.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Items.aspx.cs">Items.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LegalNotice.aspx">LegalNotice.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="LegalNotice.aspx.cs">LegalNotice.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MasterPage.master">MasterPage.master</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MasterPage.master.cs">MasterPage.master.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="News.aspx">News.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="News.aspx.cs">News.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="People.aspx">People.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="People.aspx.cs">People.aspx.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Testimonials.aspx">Testimonials.aspx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Testimonials.aspx.cs">Testimonials.aspx.cs</ProjectItem>
+      <Folder Name="TreeLineImages" TargetFolderName="TreeLineImages">
+        <ProjectItem ReplaceParameters="false" TargetFileName="i.gif">i.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="l.gif">l.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="lminus.gif">lminus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="lplus.gif">lplus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="minus.gif">minus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="plus.gif">plus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="rminus.gif">rminus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="rplus.gif">rplus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="t.gif">t.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tminus.gif">tminus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="tplus.gif">tplus.gif</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="r.gif">r.gif</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="web.config">web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Web.sitemap">Web.sitemap</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInWebBrowser="true" OpenOrder="1" TargetFileName="Welcome.html">Welcome.html</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
